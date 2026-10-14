@@ -6,6 +6,12 @@ import { useEffect, useState } from "react";
 import { club, navItems } from "@/lib/content";
 import { buttonClass } from "@/components/Button";
 
+function samePath(pathname: string, href: string) {
+  const normalize = (value: string) =>
+    value.length > 1 && value.endsWith("/") ? value.slice(0, -1) : value;
+  return normalize(pathname) === normalize(href);
+}
+
 export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -35,7 +41,7 @@ export function SiteHeader() {
         </Link>
         <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
           {navItems.map((item) => {
-            const active = pathname === item.href;
+            const active = samePath(pathname, item.href);
             return (
               <Link
                 key={item.href}
@@ -72,7 +78,7 @@ export function SiteHeader() {
           className="border-t border-mist bg-paper px-4 py-2 lg:hidden"
         >
           {navItems.map((item) => {
-            const active = pathname === item.href;
+            const active = samePath(pathname, item.href);
             return (
               <Link
                 key={item.href}
