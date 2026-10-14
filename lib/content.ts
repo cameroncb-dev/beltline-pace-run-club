@@ -351,27 +351,6 @@ export const decisions = [
   },
 ] as const;
 
-export const aiUse = [
-  {
-    tool: "Cursor agent, Grok 4.7",
-    usedFor:
-      "Read the Design Derby packets, planned Option A, and built the pages, shared components, and visitor copy.",
-    where: "Whole site",
-  },
-  {
-    tool: "Cursor agent, Grok 4.7",
-    usedFor:
-      "Compared the brief, the content pack, and the three emails, then wrote the decision for each conflict. Packet facts were copied. No client update was invented.",
-    where: "Decision log",
-  },
-  {
-    tool: "Cursor agent, Grok 4.7",
-    usedFor:
-      "Measured the brand color pairs against the 4.5 to 1 rule and kept Asphalt text on Sunrise Yellow buttons.",
-    where: "Design system and the shared button",
-  },
-] as const;
-
 export const photoCredits = [
   { id: "5038818", use: "Home, two people jogging on a city path" },
   { id: "1571939", use: "Join, a group of runners on a trail" },

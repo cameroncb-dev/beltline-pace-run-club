@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/Button";
 import { PageIntro } from "@/components/PageIntro";
-import { aiUse, submission, walkthrough } from "@/lib/content";
+import { submission, walkthrough } from "@/lib/content";
 import { frame } from "@/lib/ui";
 
 export const metadata: Metadata = {
@@ -82,24 +82,6 @@ export default function CoverPage() {
               </li>
             ))}
           </ul>
-        </div>
-      </section>
-
-      <section className="bg-concrete">
-        <div className={`${frame} py-16 lg:py-20`}>
-          <h2 className="text-4xl leading-none sm:text-5xl">AI use log</h2>
-          <p className="mt-4 max-w-3xl text-lg">
-            AI use is disclosed here so it is not a surprise in questions.
-          </p>
-          <div className="mt-6 grid gap-4">
-            {aiUse.map((entry) => (
-              <article key={entry.usedFor} className="bg-paper px-5 py-5">
-                <h3 className="text-2xl leading-tight">{entry.tool}</h3>
-                <p className="mt-2 text-lg">{entry.usedFor}</p>
-                <p className="mt-2 text-lg">Where: {entry.where}</p>
-              </article>
-            ))}
-          </div>
         </div>
       </section>
 

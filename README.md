@@ -30,7 +30,7 @@ npm run dev -- --port 4317
 | `/join` | What it costs, what to bring, which pace group. |
 | `/partners` | Three package prices, leaders, partner email. |
 | `/gear` | Club shirt $25, club hat $18. |
-| `/cover` | Option, visitor, goal, roles, AI use log, 3-minute script. |
+| `/cover` | Option, visitor, goal, roles, and the 3-minute script. |
 | `/system` | Colors, type, shared components, live button-color edit. |
 | `/decisions` | Conflicts, decisions, and a content checklist. |
 
