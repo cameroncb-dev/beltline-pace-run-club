@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --sunrise: #ffc93c;
+  --asphalt: #1e2a32;
+  --concrete: #f2f0eb;
+  --trail: #2e7d5b;
+  --mist: #d9dee2;
+  --paper: #ffffff;
+}
+
+@theme inline {
+  --color-sunrise: var(--sunrise);
+  --color-asphalt: var(--asphalt);
+  --color-concrete: var(--concrete);
+  --color-trail: var(--trail);
+  --color-mist: var(--mist);
+  --color-paper: var(--paper);
+  --font-display: var(--font-oswald), sans-serif;
+  --font-body: var(--font-open-sans), sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background: var(--concrete);
+  color: var(--asphalt);
+  font-family: var(--font-body), sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), sans-serif;
+  font-weight: 700;
+}
+
+:focus-visible {
+  outline: 3px solid var(--asphalt);
+  outline-offset: 3px;
+}
+
+.on-asphalt :focus-visible {
+  outline-color: var(--sunrise);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 60;
+  background: var(--sunrise);
+  color: var(--asphalt);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.125rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
