@@ -207,15 +207,16 @@ export const buttonSwatches = [
 export const submission = {
   option: "A",
   client: "BeltLine Pace Run Club",
-  teamName: "Our team",
+  teamName: "Hackologists",
   mainVisitor: "Nervous first timer",
   goal: "Get first timers to show up.",
   primaryAction: "Join a Run",
   adjectives: "Energetic, welcoming, and a little cheeky",
   members: [
-    { name: "", role: "Design Lead" },
-    { name: "", role: "Page Designer" },
-    { name: "", role: "Product Researcher" },
+    { name: "Cameron", role: "Design Lead" },
+    { name: "Yiqi", role: "Page Designer" },
+    { name: "David", role: "Product Researcher" },
+    { name: "Kennedy", role: "Content and Accessibility Researcher" },
   ],
 };
 

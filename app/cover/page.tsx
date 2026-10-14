@@ -14,7 +14,7 @@ export default function CoverPage() {
     <>
       <PageIntro
         title="Option A"
-        lede="This is the project cover for judging. The club site starts at Home. Say the option out loud before the walkthrough."
+        lede="Hackologists picked Option A. This cover is for judging. The club site starts at Home. Say the option out loud before the walkthrough."
       >
         <Button href="/">Open the club site</Button>
         <Button href="/decisions" variant="ghost">
@@ -68,15 +68,13 @@ export default function CoverPage() {
 
       <section className="bg-paper">
         <div className={`${frame} py-16 lg:py-20`}>
-          <h2 className="text-4xl leading-none sm:text-5xl">Team</h2>
+          <h2 className="text-4xl leading-none sm:text-5xl">{submission.teamName}</h2>
           <p className="mt-4 max-w-3xl text-lg">
-            Team name on the cover: {submission.teamName}. No personal names were
-            invented. Before you present, put your names in{" "}
-            <span className="font-display">lib/content.ts</span> under submission.members.
+            Four people, two designers and two researchers. Everyone can speak to any page.
           </p>
-          <ul className="mt-6 grid gap-3 sm:grid-cols-3">
+          <ul className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {submission.members.map((member) => (
-              <li key={member.role} className="bg-mist px-4 py-4">
+              <li key={member.name} className="bg-mist px-4 py-4">
                 <p className="font-display text-2xl leading-tight">
                   {member.name || "Name not entered"}
                 </p>

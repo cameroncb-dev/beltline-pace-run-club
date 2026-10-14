@@ -36,7 +36,7 @@ npm run dev -- --port 4317
 
 ## Before you present
 
-Put your team name and teammate names in `submission` inside `lib/content.ts`. No names were invented.
+Team name: Hackologists. Cameron is Design Lead, Yiqi is Page Designer, David is Product Researcher, and Kennedy is Content and Accessibility Researcher.
 
 Start the walkthrough on `/cover` by saying you picked Option A. Then open Home and click through the nav. Join a Run is in the navigation on every page.
 
