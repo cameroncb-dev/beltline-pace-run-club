@@ -1,8 +1,12 @@
 # BeltLine Pace Run Club
 
-Option A for the ColorStack Tech League Design Derby. This is a five-page site for a fictional Atlanta run club. Facts, prices, dates, and the schedule come from the client packet. Headlines, layout, and voice are original.
+Hackologists placed **2nd** at the ColorStack Tech League Design Derby with this site.
+
+Option A is a five-page site for a fictional Atlanta run club. Facts, prices, dates, and the schedule come from the client packet. Headlines, layout, and voice are original.
 
 The tagline is **Show up. We will pace you.**
+
+![Homepage of BeltLine Pace Run Club, with the tagline Show up. We will pace you. and this week's runs](docs/home.png)
 
 ## Run it
 
@@ -34,11 +38,11 @@ npm run dev -- --port 4317
 | `/system` | Colors, type, shared components, live button-color edit. |
 | `/decisions` | Conflicts, decisions, and a content checklist. |
 
-## Before you present
+## Team
 
-Team name: Hackologists. Cameron is Design Lead, Yiqi is Page Designer, David is Product Researcher, and Kennedy is Content and Accessibility Researcher.
+Hackologists: Cameron (Design Lead), Yiqi (Page Designer), David (Product Researcher), and Kennedy (Content and Accessibility Researcher).
 
-Start the walkthrough on `/cover` by saying you picked Option A. Then open Home and click through the nav. Join a Run is in the navigation on every page.
+The project cover is at `/cover`. Join a Run is in the navigation on every page.
 
 ## If the client update arrives
 
